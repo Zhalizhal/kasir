@@ -61,7 +61,7 @@ $foto = $_SESSION["foto_profil"];
 						<div class="sb-sidenav-menu">
 							<div class="nav">
 								<br/>
-								<center><img src="gambar/profil/<?php echo $foto; ?>" class="avatar fadeIn" style="width:50%;">
+								<center><!-- <img src="gambar/profil/<?php echo $foto; ?>" class="avatar fadeIn" style="width:50%;"> -->
 									<br>
 									<div class="sb-sidenav-menu mt-3"></i><?php echo $nama; ?></div></center><br>
 
@@ -85,7 +85,7 @@ $foto = $_SESSION["foto_profil"];
 																		<nav class="sb-sidenav-menu-nested nav">
 																			<a class="nav-link" href="?page=produk"><i class="fas fa-box"></i>&ensp;Produk</a>
 																			<a class="nav-link" href="?page=kategori"><i class="fas fa-list-alt"></i>&ensp;Kategori</a>
-																			<a class="nav-link" href="?page=pembelian"><i class="fas fa-shopping-cart"></i>&ensp;Pembelian</a>
+																			<a class="nav-link" href="?page=pembelian"><i class="fas fa-shopping-cart"></i>&ensp;Penjualan</a>
 																		</nav>
 																	</div>
 

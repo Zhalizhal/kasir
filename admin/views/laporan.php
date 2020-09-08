@@ -44,7 +44,7 @@ if (isset($_POST["kirim"])) {
 </style>
 <div class="row">
 	<div class="col-lg-12 ">
-		<h1>Data Laporan</h1>
+		<h1>Data Laporan NOURA FAMILY</h1>
 		<ol class="breadcrumb noprint">
 			<li>Laporan</li>
 		</ol>

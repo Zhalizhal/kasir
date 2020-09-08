@@ -5,7 +5,7 @@ include 'config/koneksi.php';
 	<div class="col-lg-12">
 		<h1>Data Pembelian</h1>
 		<ol class="breadcrumb">
-			<li><i class="icon-dashboard"></i> Data Pembelian</li>
+			<li><i class="icon-dashboard"></i> Data Penjualann</li>
 		</ol>
 	</div>
 </div>
@@ -34,8 +34,8 @@ include 'config/koneksi.php';
 			<thead class="thead-dark">
 				<tr>
 					<th>No</th>
-					<th>Tanggal Beli (Tahun-Bulan-Tanggal)</th>
-					<th>Total Pembelian</th>
+					<th>Tanggal (Tahun-Bulan-Tanggal)</th>
+					<th>Total Penjualan</th>
 					<th>Aksi</th>
 				</tr>
 			</thead>

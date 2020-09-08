@@ -52,7 +52,7 @@ $countpembelian = mysqli_num_rows($totalpembelian);
 
       <div class="col-4 col-md-6">
         <div class="card bg-dark text-white  animate__animated animate__bounceInRight">
-          <div class="card-body animate__animated animate__bounceInRight">Data Pembelian
+          <div class="card-body animate__animated animate__bounceInRight">Data Penjualan
            <h1 class="announcement-heading"><i class="fas fa-shopping-cart"></i>
             <?php echo $countpembelian; ?></h1></div>
             <div class="card-footer d-flex align-items-center justify-content-between">

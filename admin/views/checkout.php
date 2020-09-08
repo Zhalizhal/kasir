@@ -14,7 +14,6 @@ if (empty($_SESSION['keranjangg'])) {
 
 <section>
 	<div class="container">
-		<h1>Keranjang Belanja</h1>
 		<table class="table table-bordered">
 			<thead class="thead-dark">
 				<tr>

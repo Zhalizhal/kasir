@@ -18,9 +18,9 @@
 			<div class="form-group">
 				<input type="hidden" disabled="" name="kode_barang" class="form-control">
 			</div>
-			<div class="form-group">
+			<!-- <div class="form-group">
 				<center><img src="gambar/profil/<?php echo $detail['foto_profil']; ?>" width="200"></center>
-			</div>
+			</div> -->
 			<div class="form-group">
 				<label>Nama</label>
 				<p type="text" readonly class="text" value="" ><?php echo $detail['nama']; ?></p>

@@ -43,7 +43,7 @@ while($d = mysqli_fetch_array($pencarian))
 				<div class="card shadow">
 
 					<div class="card-header">
-						<h1>Data Barang</h1>
+						<h1>Data Produk</h1>
 					</div>
 
 					<div class="card-body shadow">

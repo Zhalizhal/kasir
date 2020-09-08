@@ -38,12 +38,13 @@ include 'config/koneksi.php';
 				<tr>
 					<th>ID kategori</th>
 					<th>Nama Kategori</th>
+					<th>Jumlah</th>
 					<th align="right">Aksi</th>
 				</tr>
 			</thead>
 			<?php
 			
-			$sql="select * from kategori order by id_kategori ASC ";
+			$sql="SELECT * FROM kategori order by id_kategori ASC ";
 			$hasil=mysqli_query($koneksi,$sql);
 			while ($data = mysqli_fetch_array($hasil)) {
 				?>
@@ -51,10 +52,22 @@ include 'config/koneksi.php';
 				<tr>
 					<td width="8%" align="center"><?php echo $data["id_kategori"]; ?></td>
 					<td><?php echo $data["nama_kategori"];   ?></td>
+					<?php 
+					$totalbarang = mysqli_query($koneksi, "SELECT * from barang where id_kategori='$data[id_kategori]'");
+					$countbarang = mysqli_num_rows($totalbarang);
+					?>
+					<td> <?php echo $countbarang; ?> </td>
 					<td width="20%" align="center">
 						<a href="index.php?page=lihatkategori&id=<?php echo $data['id_kategori']; ?>"><button class="btn btn-info">Lihat Produk</button></a>
 						<a href="index.php?page=editkategori&id=<?php echo $data['id_kategori']; ?>"><button class="btn btn-warning">Edit</button></a>
-						<a href="index.php?page=hapuskategori&id=<?php echo $data['id_kategori']; ?>"><button class="btn btn-danger" onclick="return confirm('Yakin Hapus?')">Hapus</button></a>
+						<?php if(empty($countbarang)){ ?>
+
+							<a href="index.php?page=hapuskategori&id=<?php echo $data['id_kategori']; ?>"><button class="btn btn-danger"  onclick="return confirm('Yakin Hapus?')">Hapus</button></a>
+
+						<?php }else{ ?>
+
+						<a href="index.php?page=hapuskategori&id=<?php echo $data['id_kategori']; ?>"><button class="btn btn-danger" disabled="" onclick="return confirm('Yakin Hapus?')">Hapus</button></a>
+					<?php } ?>
 					</td>
 				</tr>
 				

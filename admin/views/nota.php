@@ -90,7 +90,7 @@ include '../config/koneksi.php';
 							<th colspan="5"><hr></th>
 						</tr>
 						<tr>
-							<td colspan="5" align="center"><strong>Toko Jaya Selalu</strong></td>
+							<td colspan="5" align="center"><strong>NOURA FAMYLI</strong></td>
 						</tr>
 						<tr>
 							<td colspan="5" align="center"><small>Jembatan, jln.raya, Parean Girang, Gempol, Kabupaten Indramayu,</small></td>
@@ -106,9 +106,9 @@ include '../config/koneksi.php';
 				<a href="../index.php?page=kasir" class="btn btn-primary noprint">Kembali</a>
 			</div>
 
-			<!-- <script>
+			<script>
 				window.print();
-			</script> -->
+			</script>
 
 
 
