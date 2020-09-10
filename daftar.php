@@ -11,7 +11,7 @@ if(isset($_POST['simpan'])){
 		VALUES (NULL, '$nama', '$username', '$password', '$level') ");
 
 	echo "<div class='alert alert-info'>Akun Terdaftar Silahkan Login</div>";
-	header("location:daftar.php");
+	header("location:login.php");
 }
 ?>
 <html lang="en">
@@ -21,7 +21,7 @@ if(isset($_POST['simpan'])){
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 	<meta name="description" content="" />
 	<meta name="author" content="" />
-	<title>Toko Maju Selalu</title>
+	<title>NOURA FAMILY</title>
 	<link href="admin/css/styles.css" rel="stylesheet" />
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" crossorigin="anonymous"></script>
 </head>
@@ -34,7 +34,7 @@ if(isset($_POST['simpan'])){
 					<div class="row justify-content-center">
 						<div class="col-lg-5">
 							<div class="card shadow-lg border-0 rounded-lg mt-5">
-								<div class="card-header"><h3 class="text-center font-weight-light my-4">Daftar : Toko Jaya Selalu</h3></div>
+								<div class="card-header"><h3 class="text-center font-weight-light my-4">Daftar : NOURA FAMILY</h3></div>
 								<div class="card-body">
 
 									<form method="post" enctype="multipart/form-data">

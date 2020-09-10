@@ -7,7 +7,7 @@ include 'koneksi.php';
 
 // menangkap data yang dikirim dari form login
 $username = $_POST['username'];
-$password = $_POST['password'];
+$password = md5($_POST['password']);
 
 
 // menyeleksi data user dengan username dan password yang sesuai
@@ -36,8 +36,16 @@ if($cek > 0){
 		header("location:../index.php");
 
 	// cek jika user login sebagai pegawai
-	}
-	else{
+	}else if($_SESSION['level']=$row['level']=='karyawan'){
+
+		// buat session login dan username
+		$_SESSION["level"]="karyawan";
+		
+		// alihkan ke halaman dashboard admin
+		header("location:../../karyawan/index.php");
+
+	// cek jika user login sebagai pegawai
+	}else{
 
 		// alihkan ke halaman login kembali
 		header("location:../../login.php?pesan=gagal");

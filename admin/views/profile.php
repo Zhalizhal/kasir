@@ -34,7 +34,7 @@
 				<input type="password" disabled="" class="form-control" value="<?php echo $detail['password']; ?>">
 			</div>
 		</form>
-		<a href="index.php?page=editprofile&id=<?php echo $detail['id_akun']; ?>" ><button class="btn btn-warning">Edit</button></a>
+		<a href="index.php?page=editprofile&id=<?php echo $detail['id_akun']; ?>" ><button class="btn btn-warning">Edit Profile</button></a>
 		<a href="index.php?page=editakun&id=<?php echo $detail['id_akun']; ?>" ><button class="btn btn-warning">Edit Akun</button></a>
 	</div>
 </div>

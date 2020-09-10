@@ -1,4 +1,3 @@
-
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -6,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Toko Maju Selalu</title>
+    <title>NOURA FAMILY</title>
     <link href="admin/css/styles.css" rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" crossorigin="anonymous"></script>
 </head>
@@ -24,7 +23,7 @@
                     <div class="row justify-content-center">
                         <div class="col-lg-5">
                             <div class="card shadow-lg border-0 rounded-lg mt-5">
-                                <div class="card-header"><h3 class="text-center font-weight-light my-4">Masuk : Toko Jaya Selalu</h3></div>
+                                <div class="card-header"><h3 class="text-center font-weight-light my-4">Masuk : NOURA FAMILY</h3></div>
                                 <div class="card-body">
                                     <form action="admin/config/cek_login.php" method="post">
                                         <div class="form-group">

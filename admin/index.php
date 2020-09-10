@@ -32,6 +32,7 @@ $foto = $_SESSION["foto_profil"];
 			width: auto;
 			height: auto;
 			border-radius: 50%;
+		}
 		</style>
 	</head>
 	<body class="sb-nav-fixed">
@@ -69,14 +70,9 @@ $foto = $_SESSION["foto_profil"];
 										<div class="sb-nav-link-icon">
 											<i class="fas fa-tachometer-alt "></i></div>Dashboard</a>
 
-											<a class="nav-link" href="?page=kasir">
+											<!-- <a class="nav-link" href="?page=kasir">
 												<div class="sb-nav-link-icon">
-													<i class="fas fa-cash-register"></i></div>Kasir</a>
-
-													<a class="nav-link" href="?page=kalkulator">
-														<div class="sb-nav-link-icon">
-															<i class="fas fa-calculator"></i></div>Kalkulator</a>
-
+													<i class="fas fa-cash-register"></i></div>Kasir</a>-->
 															<a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
 																<div class="sb-nav-link-icon">
 																	<i class="fas fa-table"></i></div>Data
@@ -89,6 +85,12 @@ $foto = $_SESSION["foto_profil"];
 																		</nav>
 																	</div>
 
+																	
+
+																	<a class="nav-link" href="?page=kelola_akun">
+																		<div class="sb-nav-link-icon">
+																			<i class="fas fa-user"></i></div>Kelola akun</a>
+																			
 																	<a class="nav-link" href="?page=laporan">
 																		<div class="sb-nav-link-icon">
 																			<i class="fas fa-file"></i></div>Laporan</a>
@@ -162,6 +164,18 @@ $foto = $_SESSION["foto_profil"];
 																			}
 																			else if (@$_GET['page'] == 'lihatkategori') {
 																				include "views/lihat_kategori.php";
+																			}
+																			else if (@$_GET['page'] == 'kelola_akun') {
+																				include "views/kelola_akun.php";
+																			}
+																			else if (@$_GET['page'] == 'edit_akun') {
+																				include "views/edit_akun.php";
+																			}
+																			else if (@$_GET['page'] == 'hapus_akun') {
+																				include "views/hapus_akun.php";
+																			}
+																			else if (@$_GET['page'] == 'tambah_akun') {
+																				include "views/tambah_akun.php";
 																			}
 																			?>   
 
